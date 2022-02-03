@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="styles/styles.css">
+    <!-- font awesome -->
+    <script src="https://kit.fontawesome.com/10f448414d.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400&display=swap" rel="stylesheet"> 
+    <!-- google icons -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+</head>
+<body>
+    <!-- START OF LOADING -->
+	<!-- <div class="loading">
+		<div class="load">
+			<div class="load-outter"></div>
+			<div class="load-inner"></div>
+
+			<span>MH</span>
+		</div>
+	</div> -->
+    <!-- END OF LOADING -->
+
+    <header>
+    <!-- START OF NAVBAR -->
+    <section class="nav">
+        <nav class="navbar wrapper">
+           <ul>
+               <li><a href="#home">Home</a></li>
+               <li><a href="#portfolio">Portfolio</a></li>
+               <li><a href="#contact">Contact</a></li>
+           </ul>
+       </nav>
+    </section>
+    <!-- END OF NAVBAR -->
+    <!-- <canvas id="particles-js">
+    </canvas> -->
+    <!-- <div id="particles-js">
+        <canvas id="particles-js"></canvas>
+    </div> -->
+    <section id="home" class="row wrapper">
+       <div class="column-left wrapper">
+           <h2>Hello!</h2>
+           <h1>I am Mark Hegarty,</h1>
+           <p>A Web Developer who's familiar with languages such as HTML, CSS, SCSS, JavaScript, and React. Besides coding, I really enjoy antediluvian history.</p>
+       </div>
+       <div class="column-right">
+           <img class=" wrapper" src="./images/coding.png" alt="A MacBook laptop on the left and right sides, an iMac in the middle, with windows in the background shining sunlight in.">
+       </div>
+    </section>
+    </header>
+
+    <main id="portfolio">
+        <section class="portfolio wrapper">
+            <h3>My <span>Portfolio</span></h3>
+            <div class="portfolio-row">
+                <ul>
+                    <li><a href="https://angry-hypatia-0d64c5.netlify.app/"><img class="ghibli"src="./images/StudioGhibli-Screenshot.png" alt="Blue sky, white clouds, and an island floating in the air."></a></li>
+                    <li><a href="https://pensive-lamport-69a1a4.netlify.app/"><img class="genrenator" src="./images/Genrenator-Screenshot.png" alt="Blue and red lighting with headphones, plants, and dice on a desk."></a></li>
+                    <li><a href="https://elated-sammet-1dde42.netlify.app/"><img class="map" src="./images/ShopperMapper-Screenshot.png" alt="A map with a search bar"></a></li>
+                </ul>
+            </div>
+            <div class="title-description">
+                <div class="studioGhibli">
+                    <h4>Studio Ghibli</h4>
+                    <p>A paired programmed application made using HTML, SCSS, & Javascript where you can select a film and get back information about that particular film, such as an image, title, description, and run time.</p>
+                </div>
+                <div class="genre">
+                    <h4>Genrenator</h4>
+                    <p>This is a website I made using CSS & React, you can click the button and it will display a random genre below. If you keep clicking the button, new genres will be displayed if your not happy with the current.</p>
+                </div>
+                <div class="shopper">
+                    <h4>Shopper Mapper</h4>
+                    <p>A group project made using CSS & React. After searching for a term in the search bar a list will appear with local places to shop and eat. After a selection is made the user will haev directions displayed on the map.</p>
+                </div>
+
+            </div>
+
+        </section>
+
+        <section id="contact" class="contact wrapper">
+            <h3><span>Contact </span>me</h3>
+            <div class="contact-me">
+                <div class="mail">
+                    <a href="mailto:markhegarty.audio@gmail.com"><i class="far fa-envelope"></i></a>
+                    <p>
+                        <a href="mailto:markhegarty.audio@gmail.com">markhegarty.audio@gmail.com</a>
+                    </p>
+                </div>
+                <div class="phone">
+                    <a href="tel:437-580-6900"><i class="fas fa-phone-volume"></i></a>
+                    <p>
+                        <a class="phone-number" href="tel:437-580-6900">437-580-6900</a>
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
+    </footer>
+<script src="./node_modules/particles.js/demo/js/app.js"></script>
+<script src="scripts.js"></script>
+<script src="./node_modules/particles.js/particles.js"></script>
+</body>
+</html>
