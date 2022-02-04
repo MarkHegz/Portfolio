@@ -37,10 +37,12 @@
     <!-- START OF NAVBAR -->
     <section class="nav">
         <nav class="navbar wrapper">
-           <ul>
-               <li><a href="#home">Home</a></li>
-               <li><a href="#portfolio">Portfolio</a></li>
-               <li><a href="#contact">Contact</a></li>
+            <div class="hamburger"><i class="fa fa-bars"></i></div>
+           <ul class="menu">
+               <li class="links"><a href="#home">Home</a></li>
+               <li class="links"><a href="#portfolio">Portfolio</a></li>
+               <li class="links"><a href="#contact">Contact</a></li>
+               <div class="closeMenu"><i class="fa fa-times"></i></div>
            </ul>
        </nav>
     </section>
@@ -67,26 +69,27 @@
             <h3>My <span>Portfolio</span></h3>
             <div class="portfolio-row">
                 <ul>
-                    <li><a href="https://angry-hypatia-0d64c5.netlify.app/"><img class="ghibli"src="./images/StudioGhibli-Screenshot.png" alt="Blue sky, white clouds, and an island floating in the air."></a></li>
-                    <li><a href="https://pensive-lamport-69a1a4.netlify.app/"><img class="genrenator" src="./images/Genrenator-Screenshot.png" alt="Blue and red lighting with headphones, plants, and dice on a desk."></a></li>
-                    <li><a href="https://elated-sammet-1dde42.netlify.app/"><img class="map" src="./images/ShopperMapper-Screenshot.png" alt="A map with a search bar"></a></li>
+                    <div class="studioGhibli">
+                        <li><a href="https://angry-hypatia-0d64c5.netlify.app/"><img class="ghibli"src="./images/StudioGhibli-Screenshot.png" alt="Blue sky, white clouds, and an island floating in the air."></a></li>
+                        <h4>Studio Ghibli</h4>
+                        <p>A paired programmed application made using HTML, SCSS, & Javascript where you can select a film and get back information about that particular film, such as an image, title, description, and run time.</p>
+                    </div>
+                    <div class="genre">
+                        <li><a href="https://pensive-lamport-69a1a4.netlify.app/"><img class="genrenator" src="./images/Genrenator-Screenshot.png" alt="Blue and red lighting with headphones, plants, and dice on a desk."></a></li>
+                        <h4>Genrenator</h4>
+                        <p>This is a website I made using CSS & React, you can click the button and it will display a random genre below. If you keep clicking the button, new genres will be displayed if you're not happy with the current.</p>
+                    </div>
+                    <div class="shopper">
+                        <li><a href="https://elated-sammet-1dde42.netlify.app/"><img class="map" src="./images/ShopperMapper-Screenshot.png" alt="A map with a search bar"></a></li>
+                        <h4>Shopper Mapper</h4>
+                        <p>A group project made using CSS & React. After searching for a term in the search bar a list will appear with local places to shop and eat. After a selection is made the user will have directions displayed on the map.</p>
+                    </div>
+                   
+
+
                 </ul>
             </div>
-            <div class="title-description">
-                <div class="studioGhibli">
-                    <h4>Studio Ghibli</h4>
-                    <p>A paired programmed application made using HTML, SCSS, & Javascript where you can select a film and get back information about that particular film, such as an image, title, description, and run time.</p>
-                </div>
-                <div class="genre">
-                    <h4>Genrenator</h4>
-                    <p>This is a website I made using CSS & React, you can click the button and it will display a random genre below. If you keep clicking the button, new genres will be displayed if you're not happy with the current.</p>
-                </div>
-                <div class="shopper">
-                    <h4>Shopper Mapper</h4>
-                    <p>A group project made using CSS & React. After searching for a term in the search bar a list will appear with local places to shop and eat. After a selection is made the user will have directions displayed on the map.</p>
-                </div>
 
-            </div>
 
         </section>
 
@@ -111,8 +114,6 @@
     <footer>
         <p>Created at <a href="https://junocollege.com/">Juno College</a></p>
     </footer>
-<script src="./node_modules/particles.js/demo/js/app.js"></script>
 <script src="scripts.js"></script>
-<script src="./node_modules/particles.js/particles.js"></script>
 </body>
 </html>

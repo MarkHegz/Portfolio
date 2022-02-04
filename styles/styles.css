@@ -118,6 +118,15 @@ nav {
     padding-right: 4rem;
     position: fixed;
 }
+nav .hamburger{
+    font-size: 2rem;
+    margin: 1rem;
+    display: none;
+    cursor: pointer;
+}
+nav .closeMenu {
+    display: none;
+}
 .row {
     display: flex;
     height: 33.3rem;
@@ -140,7 +149,7 @@ nav {
 
 .portfolio {
     margin-top: 6rem;
-    margin-bottom: 12rem;
+    margin-bottom: 6rem;
 }
 .portfolio h3 {
     margin-bottom: 6rem;
@@ -169,10 +178,7 @@ nav {
 .map {
     padding-left: 10px;
 }
-.title-description {
-    display: flex;
-    justify-content: space-evenly;
-}
+
 .studioGhibli,
 .genre,
 .shopper {
@@ -258,7 +264,117 @@ h1 {
     50% { border-color: rgb(36, 212, 106) }
   }
 
+/* MEDIA QUERIES */
 
+@media (max-width: 1100px) {
+    .row {
+        flex-direction: column;
+    }
+    .column-right {
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 6rem;
+    }
+    .column-right img {
+        margin-top: 1rem;
+        margin-bottom: 6rem;
+    }
+    .column-left {
+        padding-top: 6rem;
+    }
+    .portfolio {
+        padding-top: 6rem;
+        margin-bottom: 6rem;
+    }
+    .portfolio-row {
+        flex-direction: column;
+    }
+    .contact {
+        margin-top: 0;
+    }
+    .contact-me {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .mail, .phone {
+        width: 100%;
+    }
+    .mail {
+        margin-bottom: 3rem;
+    }
+    .portfolio-row ul {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .studioGhibli,
+    .genre,
+    .shopper {
+        width: 100%;
+        margin-bottom: 3rem;
+    }
+    .studioGhibli img,
+    .genre img,
+    .shopper img{
+        width: 75%;
+    }
+}
+
+@media (max-width: 730px) {
+    .navbar {
+        padding: 0;
+    }
+    .menu {
+        position: fixed;
+        height: 100vh;
+        top: 0;
+        right: 0;
+        left: -100%;
+        gap: 0;
+        width: 100%;
+        
+        /* z-index: 10; */
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        transition: 0.3s;
+        /* display: none; */
+    }
+    nav .menu .closeMenu {
+        display: block;
+        position: absolute;
+        top: 1rem;
+        right: 1rem;
+    }
+    nav .hamburger {
+        display: flex;
+        justify-content: flex-end;
+    }
+    .hamburger .active .bar:nth-child(2){
+        opacity: 0;
+    }
+    .hamburger .active .bar:nth-child(1){
+        transform: translateY(.5rem) rotate(45deg);
+    }
+    .hamburger .active .bar:nth-child(3){
+        transform: translateY(-.5rem) rotate(-45deg);
+    }
+    nav .menu li a:hover {
+        background: none;
+        color: rgb(36, 212, 106);
+        font-size: 1.5rem;
+    }
+    .links {
+        margin: 1rem 0;
+    }
+    .menu .active {
+        left: 0;
+    }
+}
+@media (max-width: 625px) {
+    h1 {
+        white-space:pre-line;
+    }
+}
 
 
 
