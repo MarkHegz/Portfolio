@@ -8,22 +8,21 @@
 //     console.log('callback - particles-js config loaded');
 //   });
 
-  const menu = document.querySelector(".menu");
-  const hamburger = document.querySelector(".hamburger");
-  const closeMenu = document.querySelector(".closeMenu");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("active");
-    menu.classList.toggle("active");
-    console.log(hamburger)
-  })
-  // closeMenu.addEventListener("click", close);
 
-  // function show() {
-  //   menu.style.display = "flex";
-  //   menu.style.top = "0";
-  // }
 
-  // function close() {
-  //   menu.style.top = "-100%";
-  // }
+  const menu = document.querySelector('.menu');
+  const openMenu = document.querySelector('.openMenu')
+  const closeMenu = document.querySelector('.closeMenu')
+
+  openMenu.addEventListener('click', show);
+  closeMenu.addEventListener('click', close);
+
+  function show() {
+    menu.style.display = 'flex';
+    menu.style.top = '0';
+  }
+
+  function close() {
+    menu.style.top = ('-1000%');
+  }
