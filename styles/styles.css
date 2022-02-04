@@ -374,6 +374,16 @@ h1 {
     h1 {
         white-space:pre-line;
     }
+    .mail p,
+    .phone p {
+        font-size: .75rem;
+    }
+}
+@media (max-width: 420px) {
+    .mail p,
+    .phone p {
+        font-size: .6rem;
+    }
 }
 
 
